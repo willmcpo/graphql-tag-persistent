@@ -1,6 +1,6 @@
 {
   "name": "graphql-tag-persistent",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A JavaScript template literal tag that parses GraphQL queries, and supports persistent queries by adding a query hash to the document",
   "main": "./lib/graphql-tag.umd.js",
   "module": "./src/index.js",

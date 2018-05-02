@@ -1,6 +1,6 @@
 {
   "name": "graphql-tag-persistent",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A JavaScript template literal tag that parses GraphQL queries, and supports persistent queries by adding a query hash to the document",
   "main": "./lib/graphql-tag.umd.js",
   "module": "./src/index.js",
@@ -8,7 +8,8 @@
   "scripts": {
     "bundle": "rollup -c && cp src/index.js.flow lib/graphql-tag.umd.js.flow",
     "test": "mocha test/graphql.js test/graphql-v0.12.js && tav --ci --compat",
-    "prepublish": "npm test && npm run bundle"
+    "prepublish": "npm test && npm run bundle",
+    "postpublish": "git push --follow-tags"
   },
   "repository": {
     "type": "git",

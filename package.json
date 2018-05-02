@@ -1,25 +1,23 @@
 {
-  "name": "graphql-tag",
-  "version": "2.9.1",
-  "description": "A JavaScript template literal tag that parses GraphQL queries",
+  "name": "graphql-tag-persistent",
+  "version": "1.0.0",
+  "description": "A JavaScript template literal tag that parses GraphQL queries, and supports persistent queries by adding a query hash to the document",
   "main": "./lib/graphql-tag.umd.js",
   "module": "./src/index.js",
   "jsnext:main": "./src/index.js",
   "scripts": {
     "bundle": "rollup -c && cp src/index.js.flow lib/graphql-tag.umd.js.flow",
     "test": "mocha test/graphql.js test/graphql-v0.12.js && tav --ci --compat",
-    "prepublish": "npm run bundle"
+    "prepublish": "npm run bundle",
+    "publish": "npm publish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/apollostack/graphql-tag.git"
+    "url": "git+https://github.com/willmcpo/graphql-tag-persistent.git"
   },
   "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/apollostack/graphql-tag/issues"
-  },
-  "homepage": "https://github.com/apollostack/graphql-tag#readme",
+  "homepage": "https://github.com/willmcpo/graphql-tag-persistent#readme",
   "dependencies": {},
   "devDependencies": {
     "babel-preset-es2015": "^6.9.0",
@@ -34,5 +32,11 @@
   },
   "peerDependencies": {
     "graphql": "^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0"
-  }
+  },
+  "keywords": [
+    "graphql tag",
+    "persistent query",
+    "persistent queries",
+    "query hash"
+  ]
 }

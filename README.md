@@ -1,4 +1,10 @@
-# graphql-tag
+# graphql-tag-persistent
+
+> THIS is a fork of [graphql-tag](https://github.com/apollographql/graphql-tag). A PR was
+submitted for graphql-tag to provide out-of-the-box support for query hashing and persistent queries.
+Whilst that PR doesn't get approved, this package will exist in order to support our use case and potentially
+others' use case as well. Most of the README.md is based on graphql-tag's.
+
 [![npm version](https://badge.fury.io/js/graphql-tag.svg)](https://badge.fury.io/js/graphql-tag)
 [![Build Status](https://travis-ci.org/apollographql/graphql-tag.svg?branch=master)](https://travis-ci.org/apollographql/graphql-tag)
 [![Get on Slack](https://img.shields.io/badge/slack-join-orange.svg)](http://www.apollodata.com/#slack)
